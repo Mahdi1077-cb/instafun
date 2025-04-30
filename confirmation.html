@@ -1,67 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>پیام تایید</title>
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <style>
-        body {
-            font-family: 'Vazir', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            line-height: 1.5;
-        }
-        
-        .message-container {
-            background-color: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-            margin: 2rem;
-        }
+      body {
+        font-family: "Vazir", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f0f2f5;
+        line-height: 1.5;
+      }
 
-        #message {
-            font-size: 1.1rem;
-            justify-content: center;
-            align-items: center;
-            color: #333;
-            margin: 0;
-            white-space: pre-line;
-        }
+      .message-container {
+        background-color: white;
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 600px;
+        margin: 2rem;
+      }
 
-        .highlight {
-            color: #4CAF50;
-            font-weight: bold;
-        }
+      #message {
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        margin: 0;
+        white-space: pre-line;
+      }
 
-        .link {
-            color: #2196F3;
-            text-decoration: none;
-            font-weight: bold;
-        }
+      .highlight {
+        color: #4caf50;
+        font-weight: bold;
+      }
 
-        .link:hover {
-            text-decoration: underline;
-        }
+      .link {
+        color: #2196f3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="message-container">
-        <p id="message"></p>
+      <p id="message"></p>
     </div>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const name = urlParams.get('name');
-        const age = urlParams.get('age');
-        
-        const message = `سلام چطوری
+      const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get("name");
+      const age = urlParams.get("age");
+
+      const message = `سلام چطوری
 
 میدونم اسمت <span class="highlight">${name}ه</span> و حتی میدونم <span class="highlight">${age}</span> سالته
 ولی <span class="highlight">${name}</span> جان باور کن این ذره ای برام اهمیت نداره
@@ -74,9 +79,9 @@
 
 قربونت برم بازم خودت میدونی من هیچ اجباری ندارم لینک پیجمونو برات گذاشتم خواستی بیا نخواستیم خاک تو سرت لیاقت نداری
 
-<a href="#" class="link">لینک کافه ما</a>`;
-        
-        document.getElementById('message').innerHTML = message;
+<a href="https://instagram.com/coverbesaz?utm_medium=copy_link" class="link" target="_blank">لینک کافه ما</a>`;
+
+      document.getElementById("message").innerHTML = message;
     </script>
-</body>
-</html> 
+  </body>
+</html>
